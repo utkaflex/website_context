@@ -1,103 +1,23 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Разработка веб-сервисов, мобильных приложений и корпоративных систем для бизнеса.">
-  <meta name="theme-color" content="#08110f">
-  <title>Контекст — разработка цифровых продуктов в Перми</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контекст — IT-компания · Логистика для строительства</title>
+<meta name="description" content="Контекст — IT-компания. Создаём систему логистики для строительных компаний: от погрузки на складе до доставки материалов на объект.">
+<meta name="theme-color" content="#eee8fa"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:title" content="Контекст — технологии в контексте вашего бизнеса"><meta property="og:description" content="Первый продукт — система логистики для строительных компаний. Склад, транспорт и объект в одном процессе.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Перейти к содержанию</a>
-  <header class="header" id="top">
-    <a class="brand" href="#top" aria-label="Контекст, на главную">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span>Контекст</span>
-    </a>
-    <nav class="nav" aria-label="Основная навигация">
-      <a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#cases">Решения</a><a href="#contact">Контакты</a>
-    </nav>
-    <a class="button button-small button-ghost" href="#contact">Обсудить проект</a>
-    <button class="menu" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
-  </header>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="header wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">к·</span>контекст</a><nav class="nav" id="navigation" aria-label="Основная навигация"><a href="#about">Компания</a><a href="#product">Продукт</a><a href="#process">Как это работает</a></nav><a class="header-link" href="#contact">На связи ↗</a><button class="menu" type="button" aria-label="Открыть меню" aria-controls="navigation" aria-expanded="false">Меню +</button></header>
+<main id="main">
+<section class="hero wrap" id="top"><div class="hero-topline"><span class="eyebrow">IT-компания «Контекст»</span><span class="hero-index">Люди. Процессы. Технологии.</span></div><h1>Технологии<br>в контексте<br><span>вашего бизнеса.</span></h1><div class="hero-bottom"><p>Разбираемся, как устроена работа.<br>Создаём продукты, которые делают её проще.</p><a class="button" href="#product">Наш первый продукт <span aria-hidden="true">↗</span></a></div><div class="hero-caption"><span>От реальной задачи — к работающей системе</span><span aria-hidden="true">↓</span></div></section>
+<section class="intro wrap section" id="about"><p class="eyebrow">01 / Компания</p><div><h2>Хорошее решение<br>начинается с контекста.</h2><div class="intro-columns"><p>У каждого бизнеса своя логика: кто ставит задачу, как движутся материалы, где теряется информация. Для нас разработка начинается с понимания этих связей.</p><p>Сейчас мы сосредоточены на одном продукте — системе логистики для строительных компаний. Она объединяет склад, транспорт и объект в общий процесс.</p></div></div></section>
+<section class="product section" id="product"><div class="wrap"><div class="section-top"><p class="eyebrow">02 / Первый продукт</p><span class="pill">Для строительных компаний</span></div><div class="product-heading"><h2>От склада<br><span>до объекта.</span></h2><p>Материалы должны приехать туда, где их ждут.<br>А информация о рейсе — быть под рукой<br>у тех, кто за него отвечает.</p></div>
+<div class="logistics-demo" aria-label="Демонстрация маршрута доставки"><div class="demo-header"><span class="demo-brand">контекст <b>/ логистика</b></span><span class="demo-label">Пример рейса · демоданные</span></div><div class="demo-body"><div class="route-panel"><div class="route-title"><span class="eyebrow">Рейс № 024</span><span class="status" id="route-status">На погрузке</span></div><h3>Материалы для<br>следующего этапа.</h3><p class="cargo">Сухие смеси · 12 паллет</p><div class="route-diagram"><div class="route-node"><span class="node-icon" aria-hidden="true">А</span><div><small>Точка отправления</small><strong>Центральный склад</strong></div></div><div class="route-line"><span id="route-marker" aria-hidden="true">→</span></div><div class="route-node"><span class="node-icon destination" aria-hidden="true">Б</span><div><small>Точка назначения</small><strong>Строительный объект</strong></div></div></div><div class="route-meta"><span>Одна заявка</span><span>Весь путь доставки</span></div></div><div class="timeline-panel"><p class="eyebrow">Путь одного рейса</p><p class="demo-hint">Выберите этап, чтобы увидеть процесс</p><div class="stage-list" role="group" aria-label="Этапы демонстрационного рейса"><button class="stage active" type="button" data-stage="0" aria-pressed="true"><span class="stage-number">01</span><span><strong>Погрузка на складе</strong><small>Материалы готовят к отправке</small></span><span class="stage-arrow" aria-hidden="true">↗</span></button><button class="stage" type="button" data-stage="1" aria-pressed="false"><span class="stage-number">02</span><span><strong>Доставка на объект</strong><small>Машина следует по маршруту</small></span><span class="stage-arrow" aria-hidden="true">↗</span></button><button class="stage" type="button" data-stage="2" aria-pressed="false"><span class="stage-number">03</span><span><strong>Приёмка материалов</strong><small>Получатель подтверждает доставку</small></span><span class="stage-arrow" aria-hidden="true">↗</span></button></div><p class="stage-description" id="stage-description" role="status" aria-live="polite">Склад видит, что нужно отгрузить. Заявка, материалы и машина связаны с одним рейсом.</p></div></div></div>
+<div class="benefits"><article><span>01</span><h3>Заявка не теряется</h3><p>Что везём, откуда и куда — в одном месте, с понятной привязкой к объекту.</p></article><article><span>02</span><h3>У рейса есть статус</h3><p>Погрузка, дорога и приёмка складываются в последовательную историю доставки.</p></article><article><span>03</span><h3>У команды общая картина</h3><p>Диспетчер, склад и получатель работают с информацией об одном рейсе.</p></article></div></div></section>
+<section class="process wrap section" id="process"><div><p class="eyebrow">03 / Как это работает</p><h2>Один маршрут.<br>Понятный каждому.</h2><p class="section-lead">От потребности на стройке<br>до материалов на площадке.</p></div><ol class="process-steps"><li><span>01</span><div><h3>Объект оставляет заявку</h3><p>Указывает материалы, количество и место доставки.</p></div></li><li><span>02</span><div><h3>Диспетчер планирует рейс</h3><p>Связывает заявку со складом, машиной и маршрутом.</p></div></li><li><span>03</span><div><h3>Склад передаёт груз</h3><p>Подготавливает материалы и отмечает отправку.</p></div></li><li><span>04</span><div><h3>Объект принимает доставку</h3><p>Подтверждает получение, завершая путь заявки.</p></div></li></ol></section>
+<section class="contact wrap" id="contact"><p class="eyebrow">Есть общий контекст?</p><h2>Начнём<br>с вашей задачи.</h2><div class="contact-bottom"><p>Логистика между складом и стройкой —<br>наш первый фокус. Давайте знакомиться.</p><div class="contact-pending"><span>Контакт для связи появится здесь</span><small>Готовим сайт к запуску</small></div></div></section>
+</main><footer class="footer wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">к·</span>контекст</a><span>© <span id="year">2026</span> Контекст</span><a href="#product">Склад → объект</a><a href="#top">Наверх ↑</a><a href="company.html">Сведения о компании</a></footer>
+</body></html>
 
-  <main id="main">
-    <section class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Разработка цифровых продуктов</p>
-        <h1>Превращаем сложные идеи в <em>понятные продукты</em></h1>
-        <p class="hero-lead">Проектируем и запускаем веб-сервисы, мобильные приложения и внутренние системы, которые помогают бизнесу расти.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#contact">Рассказать о задаче <b>↗</b></a><a class="text-link" href="#cases">Смотреть проекты <span>↓</span></a></div>
-      </div>
-      <div class="hero-visual reveal" aria-label="Схема работы цифрового продукта">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="core"><span>idea</span><strong>→</strong><span>impact</span></div>
-        <div class="float-card card-a"><small>Скорость релиза</small><strong>×2.4</strong><span class="spark"></span></div>
-        <div class="float-card card-b"><i></i><span>Система работает<br><b>стабильно</b></span></div>
-        <div class="dot dot-a"></div><div class="dot dot-b"></div><div class="dot dot-c"></div>
-      </div>
-      <div class="hero-foot"><span>Стратегия</span><i></i><span>Дизайн</span><i></i><span>Разработка</span><i></i><span>Поддержка</span></div>
-    </section>
-
-    <section class="trust section" aria-label="Преимущества">
-      <p>Строим работу на понятных принципах</p>
-      <div class="metrics"><div><strong>01</strong><span>вникаем в задачу</span></div><div><strong>02</strong><span>работаем прозрачно</span></div><div><strong>03</strong><span>проектируем с запасом</span></div><div><strong>04</strong><span>остаёмся на связи</span></div></div>
-    </section>
-
-    <section class="services section" id="services">
-      <div class="section-heading reveal"><p class="eyebrow"><span></span> Что мы делаем</p><h2>Технологии, которые решают <em>задачи бизнеса</em></h2><p>Берём ответственность за весь путь продукта — от исследования до стабильной работы после запуска.</p></div>
-      <div class="service-grid">
-        <article class="service-card featured reveal"><div class="card-num">01</div><div class="service-icon">⌁</div><h3>Веб-сервисы</h3><p>Личные кабинеты, платформы и высоконагруженные системы с продуманной архитектурой.</p><ul><li>Frontend & Backend</li><li>Интеграции и API</li><li>Облачная инфраструктура</li></ul></article>
-        <article class="service-card reveal"><div class="card-num">02</div><div class="service-icon">◫</div><h3>Мобильные приложения</h3><p>Нативные и кроссплатформенные приложения для iOS и Android.</p><ul><li>Продуктовый дизайн</li><li>iOS & Android</li><li>Аналитика продукта</li></ul></article>
-        <article class="service-card reveal"><div class="card-num">03</div><div class="service-icon">✦</div><h3>Автоматизация</h3><p>Внутренние системы, которые сокращают рутину и связывают процессы.</p><ul><li>CRM и ERP</li><li>AI-инструменты</li><li>Бизнес-аналитика</li></ul></article>
-      </div>
-    </section>
-
-    <section class="approach section" id="approach">
-      <div class="section-heading light reveal"><p class="eyebrow"><span></span> Как мы работаем</p><h2>Прозрачный процесс.<br><em>Измеримый результат.</em></h2></div>
-      <div class="steps">
-        <article class="step reveal"><span>01</span><div><h3>Погружаемся</h3><p>Разбираемся в бизнесе, пользователях и ограничениях. Формулируем цель и критерии успеха.</p></div></article>
-        <article class="step reveal"><span>02</span><div><h3>Проектируем</h3><p>Проверяем гипотезы, создаём прототип и техническую архитектуру до дорогой разработки.</p></div></article>
-        <article class="step reveal"><span>03</span><div><h3>Запускаем</h3><p>Разрабатываем итерациями, показываем прогресс каждую неделю и готовим продукт к росту.</p></div></article>
-      </div>
-    </section>
-
-    <section class="cases section" id="cases">
-      <div class="section-heading reveal"><p class="eyebrow"><span></span> Возможные решения</p><h2>Что мы можем <em>создать</em></h2><p>Примеры направлений, в которых команда «Контекста» готова помочь бизнесу — от первой идеи до запуска.</p></div>
-      <div class="case-grid">
-        <article class="case case-large reveal"><div class="case-art art-one"><div class="dash"><div class="dash-nav"></div><div class="chart"><i></i><i></i><i></i><i></i><i></i></div><div class="mini-row"><b></b><b></b><b></b></div></div></div><div class="case-copy"><span>Бизнес · Web</span><h3>Корпоративная платформа</h3><p>Единое пространство для процессов, документов, аналитики и совместной работы команды.</p><strong>От идеи <small>до работающего сервиса</small></strong></div></article>
-        <article class="case reveal"><div class="case-art art-two"><div class="phone"><div class="phone-head"></div><div class="phone-card"></div><div class="phone-lines"></div></div></div><div class="case-copy"><span>Сервисы · Mobile</span><h3>Мобильное приложение</h3><p>Удобный способ связать услугу, компанию и клиента в одном интерфейсе.</p><strong>iOS + Android <small>единый продуктовый подход</small></strong></div></article>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="contact-copy reveal"><p class="eyebrow"><span></span> Начнём проект</p><h2>Есть задача?<br><em>Давайте обсудим.</em></h2><p>Расскажите коротко о проекте. Мы изучим вводные и ответим в течение рабочего дня.</p><a href="mailto:hello@context.ru">hello@context.ru ↗</a><small>Пермь · адрес почты нужно подтвердить перед публикацией</small></div>
-      <form class="contact-form reveal" id="contact-form" novalidate>
-        <label>Как к вам обращаться?<input name="name" autocomplete="name" required placeholder="Имя"><span class="error"></span></label>
-        <label>Телефон или почта<input name="contact" required placeholder="+7 999 000-00-00 / name@company.ru"><span class="error"></span></label>
-        <label>Расскажите о задаче<textarea name="message" rows="3" required placeholder="Что нужно сделать?"></textarea><span class="error"></span></label>
-        <label class="checkbox"><input type="checkbox" name="consent" required><i></i><span>Я даю <button type="button" data-modal="consent">согласие на обработку персональных данных</button> и ознакомлен(а) с <button type="button" data-modal="privacy">политикой</button>.</span></label>
-        <button class="button button-primary submit" type="submit">Отправить заявку <b>↗</b></button>
-        <p class="form-status" role="status"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div><a class="brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i></span><span>Контекст</span></a><p>Создаём цифровые продукты,<br>которые двигают бизнес вперёд.</p></div>
-    <div><h3>Навигация</h3><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#cases">Решения</a></div>
-    <div><h3>Контакты</h3><a href="mailto:hello@context.ru">hello@context.ru</a><a href="tel:+79024716328">+7 902 471-63-28</a><span>Россия, г. Пермь</span></div>
-    <div><h3>Документы</h3><button data-modal="privacy">Политика конфиденциальности</button><button data-modal="consent">Согласие на обработку ПД</button><button id="cookie-settings">Настройки cookie</button></div>
-    <div class="legal"><span>© 2026 ООО «Контекст»</span><span>ИНН [указать] · ОГРН [указать] · Пермь</span><span>Информация на сайте не является публичной офертой</span></div>
-  </footer>
-
-  <div class="cookie" id="cookie" role="dialog" aria-label="Настройки cookie" hidden>
-    <div><strong>Настройки cookie</strong><p>Мы используем необходимые cookie для работы сайта. Аналитические cookie включаются только с вашего согласия.</p><label class="toggle"><input id="analytics-cookie" type="checkbox"><i></i><span>Разрешить аналитику</span></label></div>
-    <div><button class="button button-primary" id="cookie-save">Сохранить выбор</button><button class="button button-ghost" id="cookie-essential">Только необходимые</button></div>
-  </div>
-
-  <dialog id="legal-modal"><button class="modal-close" aria-label="Закрыть">×</button><article id="modal-content"></article></dialog>
-  <script src="script.js"></script>
-</body>
-</html>
